@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dlai-pytorch"
+version = "0.1.0"
+description = "DeepLearning.AI PyTorch exercises and utilities"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["src1", "src2"]
+exclude = ["*.notebooks*", "notebooks*", "*notebooks*"]
+
+
+
